@@ -13,11 +13,11 @@ int main() {
   scanf("%f", &v);
 
   // x = preço do material da base da lata
-  printf("Preço do material da base da lata (por m²): ");
+  printf("Preço do material da base da lata (R$/m²): ");
   scanf("%f", &x);
 
   // y = preço do material da lateral da lata
-  printf("Preço do material da lateral da lata (por m²): ");
+  printf("Preço do material da lateral da lata (R$/m²): ");
   scanf("%f", &y);
 
   // r = raio da lata; cbrt = raiz cúbica; M_PI = π
@@ -39,10 +39,10 @@ int main() {
   p = al * y + ab * 2 * x;
 
   // Saídas
-  printf("\nRaio da base da lata: %.2f\n", r);
-  printf("Altura da lata: %.2f\n", h);
-  printf("Área total da superficie da lata: %.2f\n", at);
-  printf("Custo total do material usado na lata: %.2f\n", p);
+  printf("\nRaio da base da lata: %.2fcm\n", r);
+  printf("Altura da lata: %.2fcm\n", h);
+  printf("Área total da superficie da lata: %.2fcm²\n", at);
+  printf("Custo total do material usado na lata: R$%.2f\n", p);
   
   return 0;
 }
