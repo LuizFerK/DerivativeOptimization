@@ -3,7 +3,7 @@
 
 int main() {
   // Declaração de variáveis
-  float x, y, e, d;
+  float x, y, d, dt;
 
   // Pegar as informações necessárias
   printf("Por favor, digite as informações necessárias.\n");
@@ -16,15 +16,15 @@ int main() {
   printf("Velocidade do carro (km/h): ");
   scanf("%f", &y);
 
-  // e = distância da estação até a cidade
-  // e =
+  // d = distância da estação até a cidade
+  d = 100 - sqrt((1600 * pow(x, 2)) / (pow(y, 2) - pow(x, 2)));
 
-  // d = distância da ilha até a cidade
-  // d = 
+  // dt = distância da ilha até a cidade
+  dt = d + sqrt(1600 + pow(100 - d, 2));
 
   // Saídas
-  printf("\nDistância da estação até a cidade: %.2f\n", e);
-  printf("Distância da ilha até a cidade : %.2f\n", d);
+  printf("\nDistância da estação até a cidade: %.2f\n", d);
+  printf("Distância da ilha até a cidade : %.2f\n", dt);
   
   return 0;
 }
