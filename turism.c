@@ -23,8 +23,8 @@ int main() {
   dt = d + sqrt(1600 + pow(100 - d, 2));
 
   // Saídas
-  printf("\nDistância da estação até a cidade: %.2f\n", d);
-  printf("Distância da ilha até a cidade : %.2f\n", dt);
+  printf("\nDistância da estação até a cidade: %.2fkm\n", d);
+  printf("Distância da ilha até a cidade : %.2fkm\n", dt);
   
   return 0;
 }

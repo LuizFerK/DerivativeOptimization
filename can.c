@@ -21,10 +21,10 @@ int main() {
   scanf("%f", &y);
 
   // r = raio da lata; cbrt = raiz cúbica; M_PI = π
-  r = cbrt((v * y) / (2 * x * M_PI));
+  r = cbrt((pow(10, -6) * v * y) / (2 * x * M_PI));
 
   // h = altura da lata; pow = potenciação
-  h = v / (M_PI * pow(r, 2));
+  h = (v * pow(10, -6)) / (M_PI * pow(r, 2));
 
   // al = área lateral
   al = h * 2 * M_PI * r;
@@ -39,9 +39,9 @@ int main() {
   p = al * y + ab * 2 * x;
 
   // Saídas
-  printf("\nRaio da base da lata: %.2fcm\n", r);
-  printf("Altura da lata: %.2fcm\n", h);
-  printf("Área total da superficie da lata: %.2fcm²\n", at);
+  printf("\nRaio da base da lata: %.2fm\n", r);
+  printf("Altura da lata: %.2fm\n", h);
+  printf("Área total da superficie da lata: %.2fm²\n", at);
   printf("Custo total do material usado na lata: R$%.2f\n", p);
   
   return 0;
